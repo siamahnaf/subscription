@@ -1,0 +1,30 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type List {
+  id: String!
+  name: String!
+  created_at: String!
+}
+
+type SuccessInfo {
+  success: Boolean!
+  message: String!
+}
+
+type Query {
+  getLists: [List!]!
+}
+
+type Mutation {
+  addList(listInput: ListInput!): SuccessInfo!
+}
+
+input ListInput {
+  name: String!
+}
+
+type Subscription {
+  getSubscribe: String!
+}
